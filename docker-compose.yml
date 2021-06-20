@@ -1,0 +1,11 @@
+version: '3.6'
+
+services:
+  postgresql:
+    build: docker/postgresql
+    environment:
+      - POSTGRES_USER=bingo
+      - POSTGRES_PASSWORD=bingo
+      - POSTGRES_DB=bingo
+    ports:
+      - "15432:5432"
